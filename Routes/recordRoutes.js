@@ -1,12 +1,12 @@
-// import express from "express";
-// const router = express.Router();
-// import * as JwtService  from '../Services/JwtService.js';
+import express from "express";
+const router = express.Router();
+import * as JwtService  from '../Services/JwtService.js';
 // import * as recController from '../Controllers/RecController.js';
-// // import multipart from 'multer'
-// import multipart from 'connect-multiparty'
-// var multipartMiddleware = multipart();
+// import multipart from 'multer'
+import multipart from 'connect-multiparty'
+var multipartMiddleware = multipart();
 
-// // import storage from "../config/multer.js";
+// import storage from "../config/multer.js";
 
 // router.post('/add-record',multipartMiddleware, recController.addRec);
 // router.get('/', recController.getAllRec);
@@ -19,4 +19,4 @@
 // router.get('/rec-project-status/:id', recController.recGetbyId);
 // router.get('/rec-dev-id/:id', recController.recGetbyId);
 
-// export default router;
+export default router;
